@@ -63,7 +63,7 @@ describe('Test prioritization', () => {
     expect(cardsSorted[7]).toEqual(cardStatus8)
   })
 
-  test('Test recentRecentMistakesFirstSorter', () => {
+  test('Test newRecentMistakesFirstSorter', () => {
     const cardsSorted: CardStatus[] = createRecentMistakesFirstSorter().reorganize(cards)
     expect(cardsSorted[0]).toEqual(cardStatus1)
     expect(cardsSorted[1]).toEqual(cardStatus2)
